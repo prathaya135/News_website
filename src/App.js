@@ -22,8 +22,8 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=d3286bfa2c0e4e22a9d701b7e2add758&page=1&pagesize=5`;
-        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=${apiKey}&page=1&pagesize=5`;
+        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=d3286bfa2c0e4e22a9d701b7e2add758&page=1&pagesize=5`;
+        //let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=${apiKey}&page=1&pagesize=5`;
         setloading(true);
         // await sleep(3000);
         let data = await fetch(url);
