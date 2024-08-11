@@ -19,9 +19,15 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
+<<<<<<< HEAD
         console.log(value);
         const url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=${apiKey}&page=1&pagesize=5`;
         setLoading(true);
+=======
+        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=d3286bfa2c0e4e22a9d701b7e2add758&page=1&pagesize=5`;
+        //let url = `https://newsapi.org/v2/top-headlines?country=in&category=${value}&apiKey=${apiKey}&page=1&pagesize=5`;
+        setloading(true);
+>>>>>>> origin/main
         // await sleep(3000);
         const response = await fetch(url);
         const parsedData = await response.json();
